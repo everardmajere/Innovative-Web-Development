@@ -12,10 +12,18 @@
 
 <body --bs-body-color-rgb="255, 255, 255" --bs-body-color-rgb="33, 37, 41" --bs-body-bg-rgb="255, 255, 255" class="bg-dark text-light">
     <h1 class="text-center">Favorite Musical Artists</h1>
-
+    <hr>
+    <br>
     <div class="row align-items-center">
         <div class="col-sm-4" id="images" style="padding-left:25px;">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-theme="dark">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-theme="dark">
+                 <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/bimbocore.jpg" class="d-block w-100" alt="...">
@@ -33,11 +41,11 @@
                         <img src="images/hielung.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -46,8 +54,12 @@
 
     
         <div class="col-sm-8" id="table" style="padding-right:25px;">
-            
-            
+            <div class="row row-cols-4" style="padding-bottom: 10px;">
+            <input type="text" id="AddArtist" class="col" placeholder="Add an artist">
+            <input type="text" id="AddGenre" class="col" placeholder="Add a genre">
+            <input type="text" id="AddSong" class="col" placeholder="Add top songs">
+            <button type="button" class="btn btn-secondary btn-sm col" id="addButton" style="--bs-btn-padding-x-sm: .5rem;" >Add</button>
+            </div>
             <table class="table table-striped table-hover table-bordered" id="artistTable">
                 <thead>
                     <tr>
