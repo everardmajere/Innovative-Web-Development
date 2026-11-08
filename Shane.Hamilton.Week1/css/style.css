@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../Images/wrld-01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: aquamarine;
+}
+
+
+#Content {
+  width: fit-content;
+  max-width: 90vw;
+  padding: 20px;
+  background: rgba(68, 67, 67, 0.664);
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#countryList {
+  list-style-type: none;
+  padding: 5px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#countryList.has-items {
+  list-style-type: none;
+  padding: 5px;
+  margin: 20px 0;
+  width: 100%;
+  background-color: rgb(238, 238, 231);
+  border-radius: 5px;
+}
+
+#inputRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#textBox {
+  min-width: 30ch;
+}
+
+#addButton {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#clear {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em; 
+  font-style: italic;
+  padding: 2px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
